@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(to right, #444, #667db6);
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #444;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #667db6;
+            color: #fff;
+            transform: scale(1.1);
+        }
+        .container {
+            margin: 3rem auto;
+            padding: 2rem;
+            max-width: 1100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; /* Ensures content expands and pushes footer down */
+        }
+        .profile {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #667db6;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .profile p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #666;
+            text-align: justify;
+            margin-top: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #534e61;
+            color: white;
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        }
+        footer a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            background: #667db6;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        footer a:hover {
+            background: #e0e0e0;
+            color: #444;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Angel Abegail Rosales</h1>
+        <h2>ELEC IT-E1 | BSIT</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="1 Home.html">Home</a></li>
+            <li><a href="2 Midterm.html">Midterm</a></li>
+            <li><a href="3 Final.html">Final Exam</a></li>
+            <li><a href="4 Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="profile">
+            <img src="291919807_2044188432430243_7402219118797165445_n.jpg" alt="Profile Picture">
+            <h3>Welcome to My E-Portfolio!</h3>
+            <p>
+                I'm Abby, an enthusiastic BS Information Technology student who is punctual and always eager for new challenges. Passionate about learning and applying skills in software development and problem-solving. Explore my academic milestones, projects, and achievements as I grow through the Midterm, and Final Exam phases of my journey in education.
+            </p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Angel Abegail Rosales. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
+

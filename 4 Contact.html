@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(to right, #444, #667db6);
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .contact-container {
+            padding: 2rem;
+            margin: 3rem auto;
+            max-width: 700px;
+            background: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .contact-container h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 0.8rem;
+            background: #667db6;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #534e61;
+        }
+        .social-links {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .social-links a {
+            font-size: 2rem;
+            color: #667db6;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #534e61;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #534e61;
+            color: white;
+            margin-top: 2rem;
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+            width: 100%;
+        }
+        footer a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            background: #667db6;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        footer a:hover {
+            background: #e0e0e0;
+            color: #444;
+        }
+        .home-link {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .home-link a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #667db6;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .home-link a:hover {
+            background-color: #534e61;
+        }
+        /* Popup styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            text-align: center;
+        }
+        .popup p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .popup button {
+            padding: 0.5rem 1rem;
+            background: #667db6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .popup button:hover {
+            background: #534e61;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #444;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            background: #667db6;
+            color: #fff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <h2>Get in Touch with Me</h2>
+    </header>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <ul>
+            <li><a href="1 Home.html">Home</a></li>
+            <li><a href="2 Midterm.html">Midterm</a></li>
+            <li><a href="3 Final.html">Final Exam</a></li>
+            <li><a href="4 Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h3>I'd love to hear from you!</h3>
+        <form class="contact-form" action="mailto:abqy0104@gmail.com" method="post" enctype="text/plain" onsubmit="showPopup(event)">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abqy0104@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+1234567890" target="_blank"><i class="fas fa-phone"></i></a>
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+    <div class="home-link">
+        <p><a href="1 Home.html">Back to Home</a></p>
+    </div>
+    <footer>
+        &copy; 2024 Angel Abegail Rosales. All Rights Reserved.
+    </footer>
+
+    <!-- Popup Confirmation -->
+    <div class="popup" id="popup">
+        <p>Your message has been received!</p>
+        <p>If you don't get a response soon, please try reaching out via the other links below.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Function to show the popup
+        function showPopup(event) {
+            event.preventDefault();  // Prevents form from submitting immediately
+            document.getElementById('popup').style.display = 'block';  // Show the popup
+
+            // Optionally, close the popup automatically after a few seconds
+            setTimeout(function() {
+                document.getElementById('popup').style.display = 'none';
+            }, 5000);
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+
